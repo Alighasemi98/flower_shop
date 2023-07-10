@@ -144,9 +144,9 @@
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(9, 140);
+            this.listView1.Location = new System.Drawing.Point(9, 115);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(645, 97);
+            this.listView1.Size = new System.Drawing.Size(645, 323);
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -161,6 +161,8 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ListSeed";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "فهرست بذر";

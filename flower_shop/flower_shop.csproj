@@ -98,6 +98,12 @@
     <Compile Include="Insert\Moshtari.Designer.cs">
       <DependentUpon>Moshtari.cs</DependentUpon>
     </Compile>
+    <Compile Include="Insert\pardakht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insert\pardakht.Designer.cs">
+      <DependentUpon>pardakht.cs</DependentUpon>
+    </Compile>
     <Compile Include="Insert\Paytape.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Insert\Moshtari.resx">
       <DependentUpon>Moshtari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insert\pardakht.resx">
+      <DependentUpon>pardakht.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Insert\Paytape.resx">
       <DependentUpon>Paytape.cs</DependentUpon>

@@ -385,5 +385,11 @@ namespace flower_shop
             }
         }
 
+        private void toolStripButton10_Click(object sender, EventArgs e)
+        {
+            Login lo = new Login();
+            lo.Close();
+            this.Close();
+        }
     }
 }

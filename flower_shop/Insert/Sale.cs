@@ -532,21 +532,43 @@ namespace flower_shop.Insert
             inplay.Show();
 
         }
-        // صدور فاکتور 
-        
+        pardakht pa = new pardakht();
+        private void total()
+        {
+            double price = 0;
+            for (int i = 0; i < dataGridView2.Rows.Count; i++)
+            {
+                price += (int)dataGridView2[4, i].Value;
+            }
+            pa.texghaemat.Text = price.ToString();
+            pa.texghaemat.Text = Convert.ToInt32(pa.texghaemat.Text).ToString("n0");
+        }
+        private void totall()
+        {
+            double price = 0;
+            for (int i = 0; i < dataGridView2.Rows.Count; i++)
+            {
+                price += (int)dataGridView2[2, i].Value;
+            }
+            pa.texnumber.Text = price.ToString();
+        }
+
         private void toosodorfok_Click(object sender, EventArgs e)
         {
             DialogResult dr;
             dr = MessageBox.Show(" آیا از فاکتور کردن اطمینا دارید  ","فاکتور کردن ",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
-            { 
-                Invoicing invo = new Invoicing();
-                invo.labnamee.Text = text_name.Text;
-                invo.labnumber.Text = text_numberfon.Text;
-                invo.labnoe.Text = texshakhsi.Text;
-                invo.labadress.Text = texadress.Text;
+            {
 
-                invo.Show();
+                total();
+                totall();
+
+                pa.xx= text_name.Text;
+                pa.xxx = text_numberfon.Text;
+                pa.xxxx = texshakhsi.Text;
+                pa.xxxxx = texadress.Text;
+
+                pa.Show();
                 text_name.Text = text_numberfon.Text =texadress.Text=texshakhsi.Text=textizih.Text = null;
             }
 

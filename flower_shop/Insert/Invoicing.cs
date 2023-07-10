@@ -86,5 +86,10 @@ namespace flower_shop.Insert
         {
             MessageBox.Show("ساری هنوز پرینت کامل نشده");
         }
+
+        private void labnoe_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

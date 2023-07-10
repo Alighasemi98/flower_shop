@@ -40,6 +40,8 @@
             this.ClientSize = new System.Drawing.Size(771, 365);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Serch";
             this.Text = "جستوجو";
             this.ResumeLayout(false);

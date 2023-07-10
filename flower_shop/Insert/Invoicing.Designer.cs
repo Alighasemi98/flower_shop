@@ -38,6 +38,8 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toopricee = new System.Windows.Forms.ToolStripButton();
             this.toonumber = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toopar = new System.Windows.Forms.ToolStripButton();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -50,7 +52,6 @@
             this.labnoe = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.labadress = new System.Windows.Forms.Label();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.groupBox1.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -79,7 +80,8 @@
             this.toolStripButton1,
             this.toopricee,
             this.toonumber,
-            this.toolStripButton2});
+            this.toolStripButton2,
+            this.toopar});
             this.toolStrip2.Location = new System.Drawing.Point(3, 275);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
@@ -122,6 +124,23 @@
             this.toonumber.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toonumber.Name = "toonumber";
             this.toonumber.Size = new System.Drawing.Size(23, 22);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Text = "toolStripButton2";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
+            // 
+            // toopar
+            // 
+            this.toopar.Image = ((System.Drawing.Image)(resources.GetObject("toopar.Image")));
+            this.toopar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toopar.Name = "toopar";
+            this.toopar.Size = new System.Drawing.Size(23, 22);
             // 
             // dataGridView2
             // 
@@ -250,6 +269,7 @@
             this.labnoe.Size = new System.Drawing.Size(25, 13);
             this.labnoe.TabIndex = 2;
             this.labnoe.Text = "___";
+            this.labnoe.Click += new System.EventHandler(this.labnoe_Click);
             // 
             // label2
             // 
@@ -269,25 +289,18 @@
             this.labadress.TabIndex = 0;
             this.labadress.Text = "___";
             // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton2.Text = "toolStripButton2";
-            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
-            // 
             // Invoicing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(550, 416);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Invoicing";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "صدور فاکتور";
@@ -325,5 +338,6 @@
         private System.Windows.Forms.ToolStripButton toonumber;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
+        public System.Windows.Forms.ToolStripButton toopar;
     }
 }

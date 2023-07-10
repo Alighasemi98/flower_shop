@@ -152,6 +152,8 @@
             this.ClientSize = new System.Drawing.Size(458, 321);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Invoicedisplay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "نمایش پیش فاکتور ";
